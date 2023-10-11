@@ -1,0 +1,91 @@
+/* ------------------ Menu ------------------ */
+
+.menu-itm {
+  color: var(--color2);
+}
+
+.menu-itm:hover {
+  color: var(--color0);
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: var(--color1);
+  box-shadow: 0 -1px 4px var(--shadow3);
+  z-index: 100;
+}
+
+.menu,
+.menu-hamb {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--color2);
+  font-size: var(--font-size-m);
+  font-weight: 900;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-hamb {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-hamb {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color1);
+    z-index: 1000;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.menu li a,
+.menu-hamb {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu li a:hover,
+.menu-hamb:hover {
+  color: var(--color0);
+  transition: 1s;
+  background-color: var(--color2);
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: 5%;
+  height: 100%;
+  z-index: 100;
+}

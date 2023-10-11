@@ -1,0 +1,29 @@
+/* ------------------ Contact ------------------ */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.facilities {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.maps {
+  display: none;
+  width: 80%;
+  height: 400px;
+  min-height: 200px;
+}
+
+.mapshow {
+  display: block;
+}

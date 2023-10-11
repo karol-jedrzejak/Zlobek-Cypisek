@@ -1,0 +1,13 @@
+/* ------------------ Other CSS Files ------------------ */
+
+@import "global.css";
+
+@import "menu.css";
+@import "intro.css";
+
+@import "start.css";
+@import "news.css";
+@import "about.css";
+@import "pricelist.css";
+@import "recruitment.css";
+@import "contact.css";

@@ -1,0 +1,25 @@
+.about {
+  overflow: hidden;
+  display: flex;
+  height: 90vh;
+  width: 100%;
+}
+
+.about-text {
+  width: 50vw;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-img {
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url("../images/about_1.jpg");
+  width: 50vw;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(to left, var(--shadow1), var(--shadow2));
+}

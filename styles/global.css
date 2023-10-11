@@ -1,0 +1,163 @@
+/* ------------------ Fonts ------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* ------------------ Standard ------------------ */
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --color0: #ffffff;
+  --color1: #effbff;
+  --color2: #ee4038;
+  --color3: #e5ff00;
+  --color4: #8cbc4b;
+  --color5: #beff93;
+  --color6: #ffa600;
+
+  --shadow1: rgba(0, 0, 0, 1);
+  --shadow2: rgba(0, 0, 0, 0);
+  --shadow3: rgba(0, 0, 0, 0.15);
+
+  --font-size-m: 1.3rem;
+  --font-size-4: 3rem;
+  --font-size-3: 1.5rem;
+  --font-size-2: 1.2rem;
+  --font-size-1: 1rem;
+}
+
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (max-width: 992px) {
+  :root {
+    --font-size-m: 0.8rem;
+    --font-size-4: 2.5rem;
+    --font-size-3: 1.2rem;
+    --font-size-2: 1rem;
+    --font-size-1: 0.8rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size-m: 1.3rem;
+    --font-size-4: 2rem;
+    --font-size-3: 0.9rem;
+    --font-size-2: 0.8rem;
+    --font-size-1: 0.7rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* ------------------ Standard Items ------------------ */
+
+.construction {
+  height: calc(100vh - 100px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.construction-img {
+  margin: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+a:hover {
+  color: var(--color6);
+  transition-duration: 0.5s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: 100%;
+  background-color: var(--color1);
+}
+
+h1 {
+  font-size: var(--font-size-4);
+  color: var(--color2);
+  font-family: "Square Peg", cursive;
+  margin: 10px;
+}
+
+h2 {
+  font-size: var(--font-size-3);
+}
+
+h3 {
+  font-size: var(--font-size-2);
+}
+
+.text-special1 {
+  color: var(--color2);
+}
+
+main {
+  font-size: var(--font-size-1);
+  padding-top: 100px;
+}
+
+footer {
+  padding: 10px;
+  background-color: var(--color1);
+  box-shadow: 0 -1px 4px var(--shadow3);
+}
+
+.foot-data {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.foot-toplink {
+  text-align: center;
+}
+
+.facebook {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px;
+}
+
+input,
+textarea,
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 200px;
+  border: 2px solid #000000;
+  padding: 0.5rem;
+  font-size: var(--font-size-1);
+  border-radius: 5px;
+}
+
+.inputLabel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  border: 2px hidden;
+  padding: 0.5rem;
+  font-size: var(--font-size-1);
+  border-radius: 5px;
+}

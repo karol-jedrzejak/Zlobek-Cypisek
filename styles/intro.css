@@ -1,0 +1,111 @@
+/* ------------------ Intro ------------------ */
+
+.intro {
+  position: fixed;
+  background-color: var(--color1);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  text-align: center;
+  animation-name: anim-intro0;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  top: -100vh;
+  cursor: progress;
+}
+
+.intro1,
+.intro2,
+.intro3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  opacity: 1;
+}
+
+.intro1 {
+  background-image: url("../images/intro_1.svg");
+  animation-name: anim-intro1;
+}
+
+.intro2 {
+  background-image: url("../images/intro_2.svg");
+  animation-name: anim-intro2;
+}
+
+.intro3 {
+  background-image: url("../images/intro_3.svg");
+  animation-name: anim-intro3;
+}
+
+@keyframes anim-intro0 {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+@keyframes anim-intro1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-intro2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-intro3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

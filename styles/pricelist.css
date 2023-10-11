@@ -1,0 +1,24 @@
+/* ------------------ Pricelist ------------------ */
+
+.pricelist {
+  display: flex;
+  min-height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prices,
+.price-img {
+  padding: 30px;
+}
+
+.prices {
+  width: 600px;
+}
+
+.price-img-pic {
+  max-width: 50vw;
+  width: 300px;
+}

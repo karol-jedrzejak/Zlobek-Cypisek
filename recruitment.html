@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="images/icon.ico" />
+    <title>Żłobek Cypisek - Rekrutacja</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="images/logo.svg" alt="Logo Złobka" />
+      <ul class="menu" id="menu">
+        <li><a class="menu-itm" href="index.html">START</a></li>
+        <li><a class="menu-itm" href="news.html">AKTUALNOŚCI</a></li>
+        <li><a class="menu-itm" href="about.html">O&nbsp;NAS</a></li>
+        <li><a class="menu-itm" href="pricelist.html">CENNIK</a></li>
+        <li><a class="menu-itm" href="recruitment.html">REKRUTACJA</a></li>
+        <li><a class="menu-itm" href="contact.html">KONTAKT</a></li>
+      </ul>
+      <div class="menu-hamb" id="menu-hamb">MENU</div>
+    </nav>
+    <main>
+      <form>
+        <h1 class="recrut-title">Formularz rekrutayjny</h1>
+        <table class="recrut-form">
+          <tr>
+            <td><label for="data">Data Rozpoczęcia:</label></td>
+            <td>
+              <input
+                type="date"
+                name="data"
+                id="data"
+                max="2021-12-31"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><h2>Dziecko</h2></td>
+          </tr>
+          <tr>
+            <td><label for="child-name">Imię:</label></td>
+            <td>
+              <input
+                type="text"
+                name="child-name"
+                id="child-name"
+                minlength="3"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="child-surname">Nazwisko:</label></td>
+            <td>
+              <input
+                type="text"
+                name="child-surname"
+                id="child-surname"
+                minlength="3"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="child-pesel">Pesel:</label></td>
+            <td>
+              <input
+                type="text"
+                name="child-pesel"
+                id="child-pesel"
+                minlength="10"
+                maxlength="11"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="child-adress">Adres:</label></td>
+            <td>
+              <textarea
+                required
+                type="text"
+                name="child-adress"
+                id="child-adress"
+                rows="4"
+                cols="20"
+                placeholder="Ul. Nazwa Nr/Nr,&#10;Miejscowość,&#10;Kod Pocztowy,&#10;Poczta"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="child-ok">Dziecko ukoćzyło 2 lata:</label>
+            </td>
+            <td>
+              <select name="child-age" id="child-age">
+                <option value="tak" selected>Tak</option>
+                <option value="nie">Nie</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><h2>Matka</h2></td>
+          </tr>
+          <tr>
+            <td><label for="mom-name">Imię:</label></td>
+            <td>
+              <input
+                type="text"
+                name="mom-name"
+                id="mom-name"
+                minlength="3"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mom-surname">Nazwisko:</label></td>
+            <td>
+              <input
+                type="text"
+                name="mom-surname"
+                id="mom-surname"
+                minlength="3"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mom-pesel">Pesel:</label></td>
+            <td>
+              <input
+                type="text"
+                name="mom-pesel"
+                id="mom-pesel"
+                minlength="10"
+                maxlength="11"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mom-adress">Adres:</label></td>
+            <td>
+              <textarea
+                required
+                type="text"
+                name="mom-adress"
+                id="mom-adress"
+                rows="4"
+                cols="20"
+                placeholder="Ul. Nazwa Nr/Nr,&#10;Miejscowość,&#10;Kod Pocztowy,&#10;Poczta"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mom-phone" required
+                >Telefon (+48) - bez spacji:</label
+              >
+            </td>
+            <td>
+              <input
+                type="tel"
+                name="mom-phone"
+                id="mom-phone"
+                pattern="[0-9]{9}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mom-email" required>E-mail:</label></td>
+            <td><input type="email" name="mom-email" id="mom-email" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><h2>Ojciec</h2></td>
+          </tr>
+          <tr>
+            <td><label for="dad-name">Imię:</label></td>
+            <td>
+              <input
+                type="text"
+                name="dad-name"
+                id="dad-name"
+                minlength="3"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dad-surname">Nazwisko:</label></td>
+            <td>
+              <input
+                type="text"
+                name="dad-surname"
+                id="dad-surname"
+                minlength="3"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="dad-pesel">Pesel:</label></td>
+            <td>
+              <input
+                type="text"
+                name="dad-pesel"
+                id="dad-pesel"
+                minlength="10"
+                maxlength="11"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dad-adress">Adres:</label></td>
+            <td>
+              <textarea
+                required
+                type="text"
+                name="dad-adress"
+                id="dad-adress"
+                rows="4"
+                cols="20"
+                placeholder="Ul. Nazwa Nr/Nr,&#10;Miejscowość,&#10;Kod Pocztowy,&#10;Poczta"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dad-phone">Telefon (+48) - bez spacji:</label></td>
+            <td>
+              <input
+                type="tel"
+                name="dad-phone"
+                id="dad-phone"
+                pattern="[0-9]{9}"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dad-email">E-mail:</label></td>
+            <td>
+              <input type="email" name="dad-email" id="dad-email" required />
+            </td>
+          </tr>
+        </table>
+        <div class="recrut-submit" required><input type="submit" /></div>
+      </form>
+    </main>
+    <footer>
+      <div class="foot-data">
+        <div>
+          <h2>Żłobek Cypisek</h2>
+          <span>ul. Kopernika 4,<br />64-500 Szamotuły</span><br />
+          <span>
+            <b>telefon:</b>
+            <a href="tel:+48731748897">+48 731 748 897</a>
+          </span>
+          <br />
+          <span>
+            <b>e-mail:</b>
+            <a href="mailto: zlobekcypisek.kopernika@gmial.com">
+              zlobekcypisek.kopernika@gmial.com
+            </a>
+          </span>
+        </div>
+        <div>
+          <h2>Filia Żłobek Cypisek</h2>
+          <span>ul. Łąkowa 9,<br />64-500 Szamotuły</span><br />
+          <span>
+            <b>telefon:</b>
+            <a href="tel:+48731748897">+48 731 748 897</a>
+          </span>
+          <br />
+          <span>
+            <b>e-mail:</b>
+            <a href="mailto: zlobekcypisek.lakowa@gmial.com">
+              zlobekcypisek.lakowa@gmial.com
+            </a>
+          </span>
+        </div>
+        <div class="facebook">
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/ZlobekCypisek"
+            data-tabs=""
+            data-width="350"
+            data-height="70"
+            data-small-header="false"
+            data-adapt-container-width="false"
+            data-hide-cover="false"
+            data-show-facepile="false"
+          >
+            <blockquote
+              cite="https://www.facebook.com/ZlobekCypisek"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a href="https://www.facebook.com/ZlobekCypisek"
+                >Prywatny Żłobek Cypisek</a
+              >
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="foot-toplink">
+        <h3><a href="#top">Wróć na górę</a></h3>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="scripts.js"></script>
+<script
+  async
+  defer
+  crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0"
+  nonce="tvlp98aQ"
+></script>
